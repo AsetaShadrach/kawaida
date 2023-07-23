@@ -14,7 +14,6 @@ export class CreateUserRequestDto{
     email: string;
 
     @IsNotEmpty()
-    @IsNumberString()
     @MinLength(7)
     idNumber: string;
 

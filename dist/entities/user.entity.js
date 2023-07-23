@@ -27,6 +27,10 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "lastName", void 0);
 __decorate([
+    (0, typeorm_1.Column)({ type: "varchar", name: "id_number" }),
+    __metadata("design:type", String)
+], User.prototype, "idNumber", void 0);
+__decorate([
     (0, typeorm_1.Column)({ type: "varchar", name: "email" }),
     __metadata("design:type", String)
 ], User.prototype, "email", void 0);

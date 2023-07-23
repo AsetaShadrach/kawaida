@@ -19,6 +19,9 @@ export class User {
     @Column({type: "varchar", name: "last_name"})
     lastName: string;
 
+    @Column({type: "varchar", name: "id_number"})
+    idNumber:string
+
     @Column({type: "varchar", name: "email"})
     email: string;
 

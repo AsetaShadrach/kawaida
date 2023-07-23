@@ -31,7 +31,6 @@ __decorate([
 ], CreateUserRequestDto.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumberString)(),
     (0, class_validator_1.MinLength)(7),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "idNumber", void 0);
