@@ -30,13 +30,13 @@ __decorate([
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "email", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(7, 9, { message: "Invalid ID number length" }),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "idNumber", void 0);
 __decorate([
-    (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.Length)(10, 20, { message: "Password length should be 10 to 20 characters" }),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "password", void 0);
 __decorate([

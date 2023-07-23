@@ -12,13 +12,14 @@ export class CreateUserRequestDto{
     @IsNotEmpty()
     @IsEmail()
     email: string;
-
-    @IsNotEmpty()
+    
+    // @IsNumberString()
     @Length(7,9,{message:"Invalid ID number length"})
+    @IsNotEmpty()
     idNumber: string;
 
-    @IsNotEmpty()
     @Length(10,20,{message:"Password length should be 10 to 20 characters"})
+    @IsNotEmpty()
     password: string;
 
     @IsNotEmpty()
