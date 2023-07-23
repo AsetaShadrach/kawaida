@@ -1,5 +1,5 @@
 import { GenericResponseDto } from './generic.dto'
-import { IsDefined, IsEmail, IsIn, IsNotEmpty, Matches } from 'class-validator';
+import { IsEmail, IsNotEmpty, IsNumberString, Matches, MinLength } from 'class-validator';
 import { RegexEpressions } from '../constants'
 
 export class CreateUserRequestDto{
@@ -14,6 +14,8 @@ export class CreateUserRequestDto{
     email: string;
 
     @IsNotEmpty()
+    @MinLength(7)
+    @IsNumberString()
     idNumber: string;
 
     @IsNotEmpty()
