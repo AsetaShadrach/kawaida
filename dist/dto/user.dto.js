@@ -31,15 +31,18 @@ __decorate([
 ], CreateUserRequestDto.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.IsNumberString)(),
+    (0, class_validator_1.MinLength)(7),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "idNumber", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MinLength)(10, { message: "Password length should be 10 or more characters" }),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "password", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.Matches)(constants_1.RegexEpressions.phoneNumberRegex),
+    (0, class_validator_1.Matches)(constants_1.RegexEpressions.phoneNumberRegex, { message: "Invalid phone number format" }),
     __metadata("design:type", String)
 ], CreateUserRequestDto.prototype, "phoneNumber", void 0);
 class UserCreationResponse {

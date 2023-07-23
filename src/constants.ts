@@ -1,5 +1,6 @@
+
 export class RegexEpressions {
-  static readonly phoneNumberRegex = '^(254|0)[0-9]{9}$';
+  static readonly phoneNumberRegex = RegExp('^(254|0)[0-9]{9}$');
 }
 
 export class TRANSACTION_TYPES{

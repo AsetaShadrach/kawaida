@@ -24,6 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransactionDto = exports.GenericDto = exports.UserDto = exports.CompanyDto = exports.Transaction = exports.Role = exports.User = exports.Company = exports.Constants = void 0;
+// Constants
 exports.Constants = __importStar(require("./constants"));
 // Entities
 exports.Company = __importStar(require("./entities/company.entity"));

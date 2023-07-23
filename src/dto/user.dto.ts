@@ -13,15 +13,17 @@ export class CreateUserRequestDto{
     @IsEmail()
     email: string;
 
+    @IsNotEmpty()
     @IsNumberString()
     @MinLength(7)
     idNumber: string;
 
-    @MinLength(10)
+    @IsNotEmpty()
+    @MinLength(10, {message:"Password length should be 10 or more characters"})
     password: string;
 
     @IsNotEmpty()
-    @Matches(RegexEpressions.phoneNumberRegex)
+    @Matches(RegexEpressions.phoneNumberRegex,{message:"Invalid phone number format"})
     phoneNumber: string;
 
     roles: Array<any>;

@@ -1,5 +1,5 @@
 export declare class RegexEpressions {
-    static readonly phoneNumberRegex = "^(254|0)[0-9]{9}$";
+    static readonly phoneNumberRegex: RegExp;
 }
 export declare class TRANSACTION_TYPES {
     static readonly BUY_FLOAT = "BUY_FLOAT";

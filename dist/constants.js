@@ -4,7 +4,7 @@ exports.TRANSACTION_STATUS = exports.TRANSACTION_TYPES = exports.RegexEpressions
 class RegexEpressions {
 }
 exports.RegexEpressions = RegexEpressions;
-RegexEpressions.phoneNumberRegex = '^(254|0)[0-9]{9}$';
+RegexEpressions.phoneNumberRegex = RegExp('^(254|0)[0-9]{9}$');
 class TRANSACTION_TYPES {
 }
 exports.TRANSACTION_TYPES = TRANSACTION_TYPES;
